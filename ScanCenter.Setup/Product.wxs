@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+  <Package Name="Scan Center" Manufacturer="Scan Center Project" Version="1.0.0" UpgradeCode="8de2e1e8-c6bb-4aa6-8ca2-b201ab6c11e8" Language="1033" Scope="perMachine" Compressed="yes">
+    <MediaTemplate EmbedCab="yes" />
+    <MajorUpgrade DowngradeErrorMessage="A newer version of Scan Center is already installed." />
+
+    <Feature Id="MainFeature" Title="Scan Center" Level="1">
+      <ComponentGroupRef Id="AppFiles" />
+    </Feature>
+
+    <StandardDirectory Id="ProgramFilesFolder">
+      <Directory Id="INSTALLFOLDER" Name="Scan Center">
+        <Component Id="ScanCenterExe" Guid="5F2D89E8-6D47-470A-89F1-EFC705D0A5C1">
+          <File Id="ScanCenterExeFile" Source="..\ScanCenter\bin\Release\ScanCenter.exe" KeyPath="yes" />
+        </Component>
+      </Directory>
+    </StandardDirectory>
+
+    <ComponentGroup Id="AppFiles" Directory="INSTALLFOLDER">
+      <ComponentRef Id="ScanCenterExe" />
+    </ComponentGroup>
+  </Package>
+</Wix>

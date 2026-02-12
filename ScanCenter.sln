@@ -1,0 +1,25 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScanCenter", "ScanCenter\ScanCenter.csproj", "{A157A3F6-5AC0-4B6A-BE5B-3D3E5D20A5CC}"
+EndProject
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "ScanCenter.Setup", "ScanCenter.Setup\ScanCenter.Setup.wixproj", "{A6D4C08F-9EC9-40E7-8861-9DB350D15B27}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A157A3F6-5AC0-4B6A-BE5B-3D3E5D20A5CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A157A3F6-5AC0-4B6A-BE5B-3D3E5D20A5CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A157A3F6-5AC0-4B6A-BE5B-3D3E5D20A5CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A157A3F6-5AC0-4B6A-BE5B-3D3E5D20A5CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6D4C08F-9EC9-40E7-8861-9DB350D15B27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6D4C08F-9EC9-40E7-8861-9DB350D15B27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
